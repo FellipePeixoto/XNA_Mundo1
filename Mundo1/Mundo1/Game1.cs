@@ -8,18 +8,22 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media; 
+using Microsoft.Xna.Framework.Media;
 #endregion
 
-namespace WindowsGame1.Objec
+namespace Mundo1.Set
 {
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        VertexPositionColor[] verts;
+        BasicEffect effect;
+        VertexBuffer buffer;
 
         public Game1()
         {

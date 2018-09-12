@@ -1,7 +1,7 @@
 using System;
-using WindowsGame1.Objec;
+using Mundo1.Set;
 
-namespace WindowsGame1
+namespace Mundo1
 {
 #if WINDOWS || XBOX
     static class Program

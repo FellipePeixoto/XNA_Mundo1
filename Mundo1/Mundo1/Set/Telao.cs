@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 #endregion
 
-namespace WindowsGame1.Objec
+namespace Mundo1.Set
 {
     public class Telao
     {
