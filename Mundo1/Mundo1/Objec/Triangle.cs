@@ -24,30 +24,30 @@ namespace WindowsGame1.Objec
         public Triangle(GraphicsDevice device, Vector3 p1, Vector3 p2, Vector3 p3, Color color)
         {
             this.device = device;
-            this.world = Matrix.Identity;
+            world = Matrix.Identity;
 
-            this.verts[0] = new VertexPositionColor(p1, color);
-            this.verts[1] = new VertexPositionColor(p2, color);
-            this.verts[2] = new VertexPositionColor(p3, color);
+            verts[0] = new VertexPositionColor(p1, color);
+            verts[1] = new VertexPositionColor(p2, color);
+            verts[2] = new VertexPositionColor(p3, color);
 
-            this.vertexBuffer = new VertexBuffer(device, typeof(VertexPositionColor), verts.Length, BufferUsage.None);
-            this.vertexBuffer.SetData<VertexPositionColor>(verts);
+            vertexBuffer = new VertexBuffer(device, typeof(VertexPositionColor), verts.Length, BufferUsage.WriteOnly);
+            vertexBuffer.SetData<VertexPositionColor>(verts);
 
-            this.effect = new BasicEffect(this.device);
+            effect = new BasicEffect(this.device);
         }
 
         public virtual void Draw(Camera camera)
         {
             RasterizerState rs = new RasterizerState();
             rs.CullMode = CullMode.None;
-            this.device.RasterizerState = rs;
+            device.RasterizerState = rs;
 
-            this.device.SetVertexBuffer(this.vertexBuffer);
+            device.SetVertexBuffer(this.vertexBuffer);
 
-            this.effect.World = this.world;
-            this.effect.View = camera.GetView();
-            this.effect.Projection = camera.GetProjection();
-            this.effect.VertexColorEnabled = true;
+            effect.World = world;
+            effect.View = camera.GetView();
+            effect.Projection = camera.GetProjection();
+            effect.VertexColorEnabled = true;
 
             foreach (EffectPass i in this.effect.CurrentTechnique.Passes)
             {

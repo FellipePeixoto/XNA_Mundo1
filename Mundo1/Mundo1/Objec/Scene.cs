@@ -33,8 +33,12 @@ namespace WindowsGame1.Objec
             triangles.Add(new Triangle(
                 device,
                 new Vector3(0, 1, 0),
-                new Vector3(1, -1, 0),
-                new Vector3(-1, -1, 0), Color.Red));
+                new Vector3(-1, -1, 0),
+                new Vector3(1, -1, 0), Color.Red));
+
+            //new Vector3(0.0f, 1.0f, 0.0f), Color.Red),
+            //new Vector3(-1.0f, -1.0f, 0.0f), Color.Red),
+            //new Vector3(1.0f, -1.0f, 0.0f), Color.Red)
         }
 
         public static void Draw()

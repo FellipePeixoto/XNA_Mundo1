@@ -24,24 +24,24 @@ namespace WindowsGame1.Objec
 
         public Camera()
         {
-            this.position = Vector3.Backward * 5;
-            this.target = Vector3.Zero;
-            this.up = Vector3.Up;
-            this.SetupView(this.position, this.target, this.up);
+            position = Vector3.Backward * 5;
+            target = Vector3.Zero;
+            up = Vector3.Up;
+            SetupView(position, target, up);
 
-            this.SetupProjection();
+            SetupProjection();
         }
 
         public void SetupView(Vector3 position, Vector3 target, Vector3 up)
         {
-            this.view = Matrix.CreateLookAt(position, target, up);
+            view = Matrix.CreateLookAt(position, target, up);
         }
 
         public void SetupProjection()
         {
             Telao telao = Telao.GetInstance();
 
-            this.projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
+            projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
                                                                   telao.GetWidth()/(float)telao.GetHeight(),
                                                                   0.0000001f,
                                                                   1000);
@@ -49,12 +49,12 @@ namespace WindowsGame1.Objec
 
         public Matrix GetView()
         {
-            return this.view;
+            return view;
         }
 
         public Matrix GetProjection()
         {
-            return this.projection;
+            return projection;
         }
     }
 }
