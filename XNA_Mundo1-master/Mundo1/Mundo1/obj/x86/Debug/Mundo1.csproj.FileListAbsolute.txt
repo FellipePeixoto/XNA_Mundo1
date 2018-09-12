@@ -1,0 +1,12 @@
+C:\Users\felli\Documents\faculdade\prog3D\Mundo1\XNA_Mundo1\Mundo1\Mundo1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\felli\Documents\faculdade\prog3D\Mundo1\XNA_Mundo1\Mundo1\Mundo1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\felli\Documents\faculdade\prog3D\Mundo1\XNA_Mundo1\Mundo1\Mundo1\obj\x86\Debug\Mundo1.csprojResolveAssemblyReference.cache
+C:\Users\felli\Documents\faculdade\prog3D\Mundo1\XNA_Mundo1\Mundo1\Mundo1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\felli\Documents\faculdade\prog3D\Mundo1\XNA_Mundo1\Mundo1\Mundo1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\felli\Documents\faculdade\prog3D\Mundo1\XNA_Mundo1\Mundo1\Mundo1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\felli\Documents\Faculdade\WindowsGame1\XNA_Mundo1-master\Mundo1\Mundo1\obj\x86\Debug\Mundo1.csprojResolveAssemblyReference.cache
+C:\Users\felli\Documents\Faculdade\WindowsGame1\XNA_Mundo1-master\Mundo1\Mundo1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\felli\Documents\Faculdade\WindowsGame1\XNA_Mundo1-master\Mundo1\Mundo1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\felli\Documents\Faculdade\WindowsGame1\XNA_Mundo1-master\Mundo1\Mundo1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\felli\Documents\Faculdade\WindowsGame1\XNA_Mundo1-master\Mundo1\Mundo1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\felli\Documents\Faculdade\WindowsGame1\XNA_Mundo1-master\Mundo1\Mundo1\obj\x86\Debug\WindowsGame1.pdb
