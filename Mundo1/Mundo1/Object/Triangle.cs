@@ -8,10 +8,11 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media; 
+using Microsoft.Xna.Framework.Media;
+using Mundo1.Set;
 #endregion
 
-namespace WindowsGame1.Objec
+namespace Mundo1.Object
 {
     class Triangle
     {
@@ -38,10 +39,6 @@ namespace WindowsGame1.Objec
 
         public virtual void Draw(Camera camera)
         {
-            RasterizerState rs = new RasterizerState();
-            rs.CullMode = CullMode.None;
-            device.RasterizerState = rs;
-
             device.SetVertexBuffer(this.vertexBuffer);
 
             effect.World = world;

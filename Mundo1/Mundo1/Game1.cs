@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 #endregion
 
-namespace WindowsGame1.Objec
+namespace Mundo1.Set
 {
     /// <summary>
     /// This is the main type for your game
@@ -43,20 +43,9 @@ namespace WindowsGame1.Objec
         {
             // TODO: Add your initialization logic here
 
-            //Scene.Initialize(GraphicsDevice,
-            //    graphics.PreferredBackBufferWidth,
-            //    graphics.PreferredBackBufferHeight);
-
-            verts = new VertexPositionColor[3]
-            {
-                new VertexPositionColor(new Vector3(0, 1, 0), Color.Red),
-                new VertexPositionColor(new Vector3(-1, -1, 0), Color.Red),
-                new VertexPositionColor(new Vector3(1, -1, 0), Color.Red)
-            };
-
-            effect = new BasicEffect(GraphicsDevice);
-            buffer = new VertexBuffer(GraphicsDevice, VertexPositionColor.VertexDeclaration, 3, BufferUsage.WriteOnly);
-            buffer.SetData(verts);
+            Scene.Initialize(GraphicsDevice,
+                graphics.PreferredBackBufferWidth,
+                graphics.PreferredBackBufferHeight);
 
             base.Initialize();
         }
@@ -107,18 +96,7 @@ namespace WindowsGame1.Objec
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            //Scene.Draw();
-
-            effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, GraphicsDevice.Viewport.AspectRatio, 0.001f, 1000.0f);
-            effect.View = Matrix.CreateLookAt(new Vector3(0, 0, -5), Vector3.Forward, Vector3.Up);
-            effect.World = Matrix.Identity;
-            effect.VertexColorEnabled = true;
-
-            foreach (EffectPass i in effect.CurrentTechnique.Passes)
-            {
-                i.Apply();
-                GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.TriangleList, verts, 0, 1);
-            }
+            Scene.Draw();
 
             base.Draw(gameTime);
         }

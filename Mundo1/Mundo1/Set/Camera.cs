@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media; 
 #endregion
 
-namespace WindowsGame1.Objec
+namespace Mundo1.Set
 {
     public class Camera
     {
@@ -24,7 +24,8 @@ namespace WindowsGame1.Objec
 
         public Camera()
         {
-            position = Vector3.Backward * 5;
+
+            position = Vector3.Backward * 20;
             target = Vector3.Zero;
             up = Vector3.Up;
             SetupView(position, target, up);
@@ -42,7 +43,7 @@ namespace WindowsGame1.Objec
             Telao telao = Telao.GetInstance();
 
             projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
-                                                                  telao.GetWidth()/(float)telao.GetHeight(),
+                                                                  telao.GetWidth() / (float)telao.GetHeight(),
                                                                   0.0000001f,
                                                                   1000);
         }

@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsGame1</RootNamespace>
+    <RootNamespace>Mundo1</RootNamespace>
     <AssemblyName>WindowsGame1</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -107,10 +107,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Objec\Camera.cs" />
-    <Compile Include="Objec\Scene.cs" />
-    <Compile Include="Objec\Telao.cs" />
-    <Compile Include="Objec\Triangle.cs" />
+    <Compile Include="Object\Quad.cs" />
+    <Compile Include="Set\Camera.cs" />
+    <Compile Include="Set\Scene.cs" />
+    <Compile Include="Set\Telao.cs" />
+    <Compile Include="Object\Triangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
