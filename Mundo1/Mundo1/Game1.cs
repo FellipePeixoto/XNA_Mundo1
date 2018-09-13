@@ -21,10 +21,6 @@ namespace Mundo1.Set
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        VertexPositionColor[] verts;
-        BasicEffect effect;
-        VertexBuffer buffer;
-
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);

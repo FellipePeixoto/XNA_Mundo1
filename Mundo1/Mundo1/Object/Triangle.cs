@@ -27,9 +27,14 @@ namespace Mundo1.Object
             this.device = device;
             world = Matrix.Identity;
 
-            verts[0] = new VertexPositionColor(p1, color);
-            verts[1] = new VertexPositionColor(p2, color);
-            verts[2] = new VertexPositionColor(p3, color);
+            //COM CORES PASSADAS NO PARAMETRO
+            //verts[0] = new VertexPositionColor(p1, color);
+            //verts[1] = new VertexPositionColor(p2, color);
+            //verts[2] = new VertexPositionColor(p3, color);
+
+            verts[0] = new VertexPositionColor(p1, Color.Red);
+            verts[1] = new VertexPositionColor(p2, Color.Green);
+            verts[2] = new VertexPositionColor(p3, Color.Blue);
 
             vertexBuffer = new VertexBuffer(device, typeof(VertexPositionColor), verts.Length, BufferUsage.WriteOnly);
             vertexBuffer.SetData<VertexPositionColor>(verts);

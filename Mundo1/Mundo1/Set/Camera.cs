@@ -22,11 +22,11 @@ namespace Mundo1.Set
         private Vector3 target;
         private Vector3 up;
 
-        public Camera()
+        public Camera(Vector3 position, Vector3 target)
         {
 
-            position = Vector3.Backward * 20;
-            target = Vector3.Zero;
+            this.position = position;
+            this.target = target;
             up = Vector3.Up;
             SetupView(position, target, up);
 
@@ -44,8 +44,8 @@ namespace Mundo1.Set
 
             projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
                                                                   telao.GetWidth() / (float)telao.GetHeight(),
-                                                                  0.0000001f,
-                                                                  1000);
+                                                                  0.0001f,
+                                                                  10000);
         }
 
         public Matrix GetView()
